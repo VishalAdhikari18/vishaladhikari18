@@ -29,15 +29,15 @@ function Home2() {
                 My fields of interest are building new &nbsp;
                 <i>
                   <b className="purple"> Web Technologies</b> and areas related to{" "}
-                  <b className="purple"> Frontend Development</b>.
+                  <b className="purple"> Full Stack Development</b>.
                 </i>
                 <br />
                 <br />
                 Whenever possible, I apply my passion for developing products with {" "} 
-                <b className="purple"> React.js</b> and
+                <b className="purple"> MongoDB, Express,</b> and
                 <i> 
                   <b className="purple">
-                    {" "} Modern JavaScript Libraries and Frameworks
+                    {" "} ReactJs, NodeJs, and Modern JavaScript Libraries and Frameworks
                   </b>
                 </i>
                 &nbsp; like {" "}
@@ -48,7 +48,7 @@ function Home2() {
                 <br />
                 I also enjoy working with responsive design using &nbsp;
                 <i>
-                  <b className="purple">CSS3, Flexbox, Grid, and Bootstrap</b>
+                  <b className="purple">CSS3, Tailwind CSS, Flexbox, Grid, and Bootstrap</b>
                 </i> and have hands-on experience with version control tools like {" "}
                 <i>
                   <b className="purple">Git and GitHub</b>
