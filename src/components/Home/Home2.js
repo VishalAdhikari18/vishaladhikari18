@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -18,49 +15,55 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-                I fell in love with programming and have learned a lot along the way! 🚀
-                <br />
-                <br />I am fluent in modern technologies like
-                <i>
-                  <b className="purple"> JavaScript (ES6+), React.js, and CSS3. </b>
-                </i>
-                <br />
-                <br />
-                My fields of interest are building new &nbsp;
-                <i>
-                  <b className="purple"> Web Technologies</b> and areas related to{" "}
-                  <b className="purple"> Full Stack Development</b>.
-                </i>
-                <br />
-                <br />
-                Whenever possible, I apply my passion for developing products with {" "} 
-                <b className="purple"> MongoDB, Express,</b> and
-                <i> 
-                  <b className="purple">
-                    {" "} ReactJs, NodeJs, and Modern JavaScript Libraries and Frameworks
-                  </b>
-                </i>
-                &nbsp; like {" "}
-                <i>
-                  <b className="purple">Next.js, Redux, and Context API</b>
-                </i>.
-                <br />
-                <br />
-                I also enjoy working with responsive design using &nbsp;
-                <i>
-                  <b className="purple">CSS3, Tailwind CSS, Flexbox, Grid, and Bootstrap</b>
-                </i> and have hands-on experience with version control tools like {" "}
-                <i>
-                  <b className="purple">Git and GitHub</b>
-                </i>.
-                <br />
-                <br />
-                I focus on handling APIs and data using &nbsp;
-                <i>
-                  <b className="purple">RESTful APIs and JSON</b>
-                </i>, while always striving to create smooth and engaging user experiences.
-              </p>
-
+              I specialize in backend development, with hands-on experience in
+              building robust and scalable server-side applications using{" "}
+              <b className="purple">Node.js</b> and{" "}
+              <b className="purple">Express.js</b>.
+              <br />
+              <br />
+              My core strengths lie in architecting{" "}
+              <b className="purple">RESTful APIs</b>, managing databases
+              efficiently, and integrating modern backend tooling to deliver
+              high-performance applications.
+              <br />
+              <br />
+              I'm proficient in working with{" "}
+              <b className="purple">MongoDB</b> and{" "}
+              <b className="purple">PostgreSQL</b>, using both{" "}
+              <b className="purple">Mongoose</b> and{" "}
+              <b className="purple">Prisma ORM</b> to manage complex data models
+              with ease and maintain type safety and performance.
+              <br />
+              <br />
+              I also have experience with <b className="purple">SQL</b> for
+              relational data and know how to optimize queries and design
+              schemas for real-world applications.
+              <br />
+              <br />
+              In the Node.js ecosystem, I work with a wide range of tools and
+              libraries including{" "}
+              <b className="purple">
+                bcrypt, jsonwebtoken, nodemailer, multer, zod, and dotenv
+              </b>
+              , among others.
+              <br />
+              <br />
+              I focus on implementing{" "}
+              <b className="purple">authentication</b>,{" "}
+              <b className="purple">authorization</b>,{" "}
+              <b className="purple">file handling</b>,{" "}
+              <b className="purple">real-time communication</b>, and{" "}
+              <b className="purple">environment configuration</b> to enhance app
+              functionality and security.
+              <br />
+              <br />
+              I follow best practices for{" "}
+              <b className="purple">modular code structure</b>,{" "}
+              <b className="purple">error handling</b>, and{" "}
+              <b className="purple">version control</b> using{" "}
+              <b className="purple">Git & GitHub</b>, ensuring team
+              collaboration and code reliability.
+            </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -105,7 +108,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
@@ -113,4 +115,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

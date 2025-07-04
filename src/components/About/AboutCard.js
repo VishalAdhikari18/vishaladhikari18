@@ -2,21 +2,25 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
-
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Vishal Singh Adhikari</span> from <span className="purple">Dehradun, India.</span>
+            Hi Everyone, I am <span className="purple">Vishal Singh Adhikari</span> from{" "}
+            <span className="purple">Dehradun, India.</span>
             <br />
-            I am currently seeking new opportunities in web development, with a focus on frontend development and ReactJS. I have completed a BTech in Computer Science from Graphic Era Hill University.
+            I’m a backend web developer with a strong focus on building scalable server-side applications using{" "}
+            <b className="purple">Node.js, Express.js</b>, and databases like{" "}
+            <b className="purple">MongoDB</b> and <b className="purple">PostgreSQL</b>.
             <br />
-            I have worked on a project related to cryptocurrency details and another project focused on building a real estate application. Both projects showcase my hands-on experience with modern web technologies and frameworks.
+            I’ve worked with tools like <b className="purple">Prisma, Mongoose, JWT,</b> and <b className="purple">bcrypt</b> to build secure and efficient APIs.
+            <br />
+            I enjoy writing clean, modular code and always aim to deliver reliable backend solutions.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from coding, some activities I enjoy:
           </p>
           <ul>
             <li className="about-activity">
@@ -28,7 +32,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Code with passion, create with purpose!"{" "}
+            "Code with passion, create with purpose!"
           </p>
           <footer className="blockquote-footer">Vishal</footer>
         </blockquote>
