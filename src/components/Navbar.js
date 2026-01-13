@@ -6,14 +6,12 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../Assets/VishalSinghAdhikari.pdf"; // Correct path to your resume
-
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+  AiOutlineAppstore,
 } from "react-icons/ai";
+import { MdSchedule } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -26,6 +24,11 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+
+  const handleScheduleDemo = () => {
+    updateExpanded(false);
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -64,7 +67,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineAppstore style={{ marginBottom: "2px" }} /> Services
               </Nav.Link>
             </Nav.Item>
 
@@ -77,20 +80,30 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Restaurant Portfolio
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item >
-            <Button
             
-              variant="primary"
-              href={pdf}
-              target="_blank"
-              style={{ maxWidth: "250px", marginBottom: "20px" }}
-            >
-              <AiOutlineDownload />
-              &nbsp;Download Resume
-            </Button>
+            <Nav.Item className="nav-cta-button">
+              <Button
+                variant="primary"
+                onClick={handleScheduleDemo}
+                className="schedule-demo-btn"
+                style={{ 
+                  backgroundColor: '#ff6b35',
+                  border: 'none',
+                  padding: '8px 20px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  borderRadius: '6px',
+                  marginLeft: '15px',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 2px 10px rgba(255, 107, 53, 0.3)'
+                }}
+              >
+                <MdSchedule style={{ marginBottom: "2px" }} />
+                &nbsp;Schedule Demo
+              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
