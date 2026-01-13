@@ -1,17 +1,107 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { 
+  MdTrendingUp, 
+  MdPhoneDisabled, 
+  MdCalendarToday, 
+  MdSearch 
+} from "react-icons/md";
 
 function Home2() {
+  const benefits = [
+    {
+      icon: <MdTrendingUp size={50} />,
+      title: "Increase Online Orders",
+      description: "Boost revenue with a streamlined online ordering system that converts visitors into customers"
+    },
+    {
+      icon: <MdPhoneDisabled size={50} />,
+      title: "Reduce Phone Calls",
+      description: "Let customers order online and book tables automatically, freeing up your staff"
+    },
+    {
+      icon: <MdCalendarToday size={50} />,
+      title: "24/7 Booking System",
+      description: "Accept reservations around the clock with an automated booking platform"
+    },
+    {
+      icon: <MdSearch size={50} />,
+      title: "SEO Optimized",
+      description: "Get found on Google with websites built for search engine visibility"
+    }
+  ];
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+        <Row style={{ marginBottom: '80px' }}>
+          <Col md={12} style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <h1 style={{ fontSize: "2.6em", lineHeight: 1.3 }}>
+              Why Choose Our <span className="purple">Restaurant Web Services?</span>
+            </h1>
+            <p style={{ fontSize: "1.2em", color: "rgba(255, 255, 255, 0.8)", marginTop: '20px' }}>
+              Built specifically for restaurants to grow their online presence
+            </p>
+          </Col>
+        </Row>
+
+        <Row style={{ justifyContent: 'center', paddingBottom: '60px' }}>
+          {benefits.map((benefit, index) => (
+            <Col md={6} lg={3} key={index} style={{ marginBottom: '30px' }}>
+              <Card 
+                className="benefit-card"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(123, 31, 162, 0.1), rgba(103, 58, 183, 0.05))',
+                  border: '1px solid rgba(197, 112, 240, 0.2)',
+                  borderRadius: '15px',
+                  padding: '30px 20px',
+                  textAlign: 'center',
+                  height: '100%',
+                  transition: 'all 0.3s ease',
+                  color: 'white'
+                }}
+              >
+                <div 
+                  style={{
+                    color: '#ff6b35',
+                    marginBottom: '20px',
+                    display: 'flex',
+                    justifyContent: 'center'
+                  }}
+                >
+                  {benefit.icon}
+                </div>
+                <h3 
+                  style={{
+                    fontSize: '1.3em',
+                    marginBottom: '15px',
+                    color: '#c770f0',
+                    fontWeight: '600'
+                  }}
+                >
+                  {benefit.title}
+                </h3>
+                <p 
+                  style={{
+                    fontSize: '1em',
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    lineHeight: '1.6'
+                  }}
+                >
+                  {benefit.description}
+                </p>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em", lineHeight: 1.3 }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">

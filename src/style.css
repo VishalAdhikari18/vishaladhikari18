@@ -741,3 +741,96 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------- */
+/* Restaurant CTA & Mobile Optimization */
+/* --------- */
+
+.cta-primary:hover {
+  background-color: #ff8555 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+}
+
+.cta-outline:hover {
+  background-color: #ff6b35 !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.schedule-demo-btn:hover {
+  background-color: #ff8555 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.5) !important;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 30px rgba(197, 112, 240, 0.3) !important;
+  border-color: rgba(197, 112, 240, 0.5) !important;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 2em !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .heading-name {
+    font-size: 1.8em !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .typewriter-container {
+    padding: 30px 20px 20px 20px !important;
+  }
+
+  .cta-buttons-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+  }
+
+  .cta-primary,
+  .cta-outline {
+    width: 100% !important;
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+  }
+
+  .schedule-demo-btn {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    width: 100% !important;
+  }
+
+  .nav-cta-button {
+    padding: 10px 0 !important;
+  }
+
+  .benefit-card {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .benefit-card {
+    margin-bottom: 25px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-header {
+    padding-top: 50px !important;
+  }
+
+  .heading {
+    font-size: 1.8em !important;
+  }
+
+  .heading-name {
+    font-size: 1.5em !important;
+  }
+}
